@@ -1,9 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #f3f8fc;
+  font-family: system-ui, sans-serif;
+  color: #19304f;
 }
-.game { background: #fff; padding: 32px; border-radius: 16px; }
-.hand:hover { transform: translateY(-4px); }
 
+.game {
+  background: #fff;
+  padding: 32px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.game h1 {
+  margin: 0 0 20px;
+  font-size: 1.6rem;
+}
+
+.game__hands {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.hand {
+  font-size: 1.1rem;
+  padding: 12px 18px;
+  border: 1px solid #c9d6e2;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.hand:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+  margin: 20px 0 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+#score {
+  margin: 0;
+  color: #5b6573;
+}
